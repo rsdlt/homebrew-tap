@@ -2,7 +2,7 @@ class Levi < Formula
   desc "Git diff viewer: commits, their files and diffs, with fzf-style search"
   homepage "https://github.com/rsdlt/levi"
   url "https://github.com/rsdlt/levi/archive/refs/tags/v0.11.2.tar.gz"
-  sha256 "12b685dfc570663fa778fce67285095af1cd1aaaf8782df299458edaed83fe43"
+  sha256 "675d1db50924cca5fe5af67118701cadf2b9a8b8c62132b9bfac650af4a35e83"
   license "MIT"
   head "https://github.com/rsdlt/levi.git", branch: "main"
 
