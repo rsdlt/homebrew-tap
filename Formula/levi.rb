@@ -4,6 +4,7 @@ class Levi < Formula
   url "https://github.com/rsdlt/levi/archive/refs/tags/v0.11.1.tar.gz"
   sha256 "a380bc85d365409fbce817195c0f30a13f695970239f35ce501bca9ab2434ee1"
   license "MIT"
+  head "https://github.com/rsdlt/levi.git", branch: "main"
 
   depends_on "rust" => :build
 
