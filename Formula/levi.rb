@@ -6,6 +6,11 @@ class Levi < Formula
   license "MIT"
   head "https://github.com/rsdlt/levi.git", branch: "main"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "rust" => :build
 
   def install
