@@ -11,6 +11,12 @@ class Levi < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/levi-0.16.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "bd3255ae39b9df02836633ce8cca239d7f2915bd601a59c38116fc0a87a81cd3"
+    sha256 cellar: :any,                 x86_64_linux:  "c82a87d8aae67971646bf5e838db0f7909799fdb34c4dd120fdf908edf9fc68c"
+  end
+
   depends_on "rust" => :build
 
   def install
