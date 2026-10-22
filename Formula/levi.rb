@@ -12,9 +12,9 @@ class Levi < Formula
   end
 
   bottle do
-    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/levi-0.19.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "757ede6bc0803d275e8eb67228bfb9a7a63e5541f1a22bf4971824fb454c68f1"
-    sha256 cellar: :any,                 x86_64_linux:  "3aa41cb10cd9571f2c35cc785deca87f2e9cbfa0bb050f27b21e9fd9e3328fad"
+    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/levi-0.20.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "815969cfc60f7301cea8d6fc0fe62e8fb86f84d3d795169f727a0e62330f682c"
+    sha256 cellar: :any,                 x86_64_linux:  "6abcac1129b1d829ed2b5e2b7a5eebd335888170d81868c9ec121785d1ce5e2f"
   end
 
   depends_on "rust" => :build
