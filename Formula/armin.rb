@@ -11,6 +11,12 @@ class Armin < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/armin-0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1cf02687b4333895948e3d14ff6d6e1b6a7ab029212842496ce9efe45323c299"
+    sha256 cellar: :any,                 x86_64_linux:  "6ff62dc8031a5ba03c965ba4f9c51e937af77de216bccc134009af38065419fb"
+  end
+
   depends_on "rust" => :build
 
   def install
