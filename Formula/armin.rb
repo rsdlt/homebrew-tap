@@ -12,9 +12,9 @@ class Armin < Formula
   end
 
   bottle do
-    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/armin-0.5.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ad29ba1eedd169c803c92b5696326e8c7467bd528b705e2a495ae5923623115b"
-    sha256 cellar: :any,                 x86_64_linux:  "3b45cb214caaa6589e16797d2887e88d9f656b3933828a244a5b77b3f03aa5d8"
+    root_url "https://github.com/rsdlt/homebrew-tap/releases/download/armin-0.5.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "0e6be585e6d8695c6ea54da899faf5be72e00c6ecf2155069ba7d5e7b1322af4"
+    sha256 cellar: :any,                 x86_64_linux:  "6a27dada297424b9d6b9338cd2928e1e8e8afb6064184dcae0447fecc8b973b2"
   end
 
   depends_on "rust" => :build
