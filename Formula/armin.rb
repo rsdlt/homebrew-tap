@@ -1,8 +1,8 @@
 class Armin < Formula
   desc "Autocomplete for zsh: a menu of your likeliest commands, ranked from history"
   homepage "https://github.com/rsdlt/armin"
-  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "b1b1a3862ceae89f3900a93fb3fdd16af2881de4dc259e8bd85c5a29ac71c936"
+  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "9551d6d5f6616d50420fe843593dbeb6e4342db5a6e12c9f253356d789feacee"
   license "MIT"
   head "https://github.com/rsdlt/armin.git", branch: "main"
 
@@ -42,5 +42,6 @@ class Armin < Formula
     system bin/"armin", "record", "--time", "1700000000", "--duration", "5", "--exit", "0",
            "--session", "test", "--cwd", testpath, "--", "git status"
     assert_match "git status", shell_output("#{bin}/armin suggest --cwd #{testpath} -- git")
+    assert_match "theme", shell_output("#{bin}/armin config")
   end
 end
