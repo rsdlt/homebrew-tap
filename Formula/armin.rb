@@ -1,8 +1,8 @@
 class Armin < Formula
   desc "Autocomplete for zsh: a menu of your likeliest commands, ranked from history"
   homepage "https://github.com/rsdlt/armin"
-  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "9551d6d5f6616d50420fe843593dbeb6e4342db5a6e12c9f253356d789feacee"
+  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "01cbbe0a59725689c6ce099555945cbf8314babde459478682dfe78923714548"
   license "MIT"
   head "https://github.com/rsdlt/armin.git", branch: "main"
 
