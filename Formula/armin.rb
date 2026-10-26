@@ -1,8 +1,8 @@
 class Armin < Formula
   desc "Autocomplete for zsh: a menu of your likeliest commands, ranked from history"
   homepage "https://github.com/rsdlt/armin"
-  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "d1338b3ccc4b33b5fb437ce1c2805d749bded1b1199990627f1fdb92fa0f6659"
+  url "https://github.com/rsdlt/armin/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "b1b1a3862ceae89f3900a93fb3fdd16af2881de4dc259e8bd85c5a29ac71c936"
   license "MIT"
   head "https://github.com/rsdlt/armin.git", branch: "main"
 
@@ -25,7 +25,9 @@ class Armin < Formula
 
   def caveats
     <<~EOS
-      Add armin to ~/.zshrc, and bring in your history once:
+      Add armin to ~/.zshrc, with zsh's completion system for Tab's menu,
+      and bring in your history once:
+        autoload -Uz compinit && compinit
         eval "$(armin init zsh)"
         armin import
       Remove zsh-autosuggestions if you use it: both draw in the same place.
